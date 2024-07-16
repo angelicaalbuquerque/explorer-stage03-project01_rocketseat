@@ -60,8 +60,11 @@ form {
   background: #fafafc;
   border-radius: 8px;
   min-height: 300px;
-
   padding: 64px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
 }
 
 fieldset {
@@ -72,6 +75,15 @@ fieldset {
   display: flex;
   flex-direction: column;
   gap: 24px;
+}
+
+.fieldset-wrapper .col-3 {
+  display: flex;
+  gap: 20px;
+}
+
+.fieldset-wrapper .col-3 > div:nth-child(1) {
+  width: 100%;
 }
 
 fieldset legend {
